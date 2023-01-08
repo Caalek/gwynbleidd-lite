@@ -14,4 +14,4 @@ jobs:
         key: ${{ secrets.KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         port: ${{ secrets.PORT }}
-        script: cd gwynbleidd-lite && git pull origin main && pip ./venv/bin/pip install -r requirements.txt && pm2 restart gw-lite
+        script: cd gwynbleidd-lite && git pull origin main && ./venv/bin/pip install -r requirements.txt && pm2 restart gw-lite
